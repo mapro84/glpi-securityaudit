@@ -1,41 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin>
+<root>
    <name>SecurityAudit</name>
    <key>securityaudit</key>
-   <state>stable</state>
-   <version>1.0.0</version>
-   <license>MIT</license>
-   <author>Mario Prospero</author>
-   <author_mail>mapro84@gmail.com</author_mail>
+   <state>stable</state> <!-- stable | unstable | beta | alpha -->
+   <logo>https://raw.githubusercontent.com/mapro84/glpi-securityaudit/main/securityaudit.png</logo>
+   <description>
+      <short>
+         <en>Security audit plugin for GLPI 11: activity logs, real-time alerts, weak password detection and failed login monitoring.</en>
+         <fr>Plugin d'audit de sécurité pour GLPI 11 : journaux d'activité, alertes temps réel, détection mots de passe faibles et surveillance des connexions échouées.</fr>
+      </short>
+      <long>
+         <en>SecurityAudit provides a complete security monitoring solution for GLPI 11. It automatically logs all actions (create, update, delete) on users, computers, tickets and other objects. It detects weak passwords using a 0-100 scoring engine at creation time (before hashing). Failed login attempts are monitored in real time via a MariaDB trigger — no cron required — and a critical alert is raised after 3 failed attempts within 15 minutes. A security dashboard provides KPIs, activity graphs and unread alert management.</en>
+         <fr>SecurityAudit offre une solution complète de surveillance sécurité pour GLPI 11. Il journalise automatiquement toutes les actions (création, modification, suppression) sur les utilisateurs, ordinateurs, tickets et autres objets. Il détecte les mots de passe faibles avec un moteur de scoring 0-100 au moment de la création (avant hashage). Les tentatives de connexion échouées sont surveillées en temps réel via un trigger MariaDB — sans cron — avec alerte critique dès 3 échecs en 15 minutes. Un tableau de bord sécurité fournit les KPIs, graphes d'activité et gestion des alertes non lues.</fr>
+      </long>
+   </description>
    <homepage>https://github.com/mapro84/glpi-securityaudit</homepage>
    <download>https://github.com/mapro84/glpi-securityaudit/archive/refs/heads/main.zip</download>
    <issues>https://github.com/mapro84/glpi-securityaudit/issues</issues>
-   <description>
-      <![CDATA[
-Security audit plugin for GLPI 11: activity logs, real-time alerts, weak password detection and failed login monitoring.
-SecurityAudit provides a complete security monitoring solution for GLPI 11.
-]]>
-   </description>
-   <long_description>
-      <![CDATA[
-SecurityAudit provides a complete security monitoring solution for GLPI 11.
-It automatically logs all actions (create, update, delete) on users, computers,
-tickets and other objects. It detects weak passwords using a 0-100 scoring
-engine at creation time (before hashing). Failed login attempts are monitored
-in real time via a MariaDB trigger — no cron required — and a critical alert
-is raised after 3 failed attempts within 15 minutes. A security dashboard
-provides KPIs, activity graphs and unread alert management.
-]]>
-   </long_description>
-   <languages>
-      <en_GB/>
-      <fr_FR/>
-   </languages>
+   <readme>https://github.com/mapro84/glpi-securityaudit/blob/main/README.md</readme>
+   <authors>
+      <author>Mario Prospero</author>
+   </authors>
+   <versions>
+      <version>
+         <num>1.0.0</num>
+         <compatibility>~11.0.0</compatibility>
+         <download_url>https://github.com/mapro84/glpi-securityaudit/archive/refs/heads/main.zip</download_url>
+      </version>
+   </versions>
+   <langs>
+      <lang>en_GB</lang>
+      <lang>fr_FR</lang>
+   </langs>
+   <license>MIT</license>
    <tags>
-      <en>security</en>
-      <en>audit</en>
-      <en>logs</en>
-      <en>alerts</en>
+      <en>
+         <tag>security</tag>
+         <tag>audit</tag>
+         <tag>logs</tag>
+         <tag>password</tag>
+         <tag>alerts</tag>
+         <tag>monitoring</tag>
+      </en>
+      <fr>
+         <tag>sécurité</tag>
+         <tag>audit</tag>
+         <tag>journaux</tag>
+         <tag>mot de passe</tag>
+         <tag>alertes</tag>
+         <tag>surveillance</tag>
+      </fr>
    </tags>
-   <min_glpi_version>11.0.0</min_glpi_version>
-</plugin>
+   <screenshots>
+      <screenshot>https://raw.githubusercontent.com/mapro84/glpi-securityaudit/main/screenshots/dashboard.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/mapro84/glpi-securityaudit/main/screenshots/logs.png</screenshot>
+   </screenshots>
+</root>
