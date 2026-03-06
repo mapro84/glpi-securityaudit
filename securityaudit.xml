@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <name>SecurityAudit</name>
+    <key>securityaudit</key>
+    <state>stable</state>
+    <logo>https://raw.githubusercontent.com/pluginsGLPI/securityaudit/main/securityaudit.png</logo>
+    <description>
+        <short>
+            <en>SecurityAudit GLPI plugin - Audit logs, alerts and password security</en>
+            <fr>Plugin GLPI SecurityAudit - Journaux d'audit, alertes et sécurité des mots de passe</fr>
+        </short>
+        <long>
+            <en>Complete security audit plugin for GLPI 11: real-time audit logs, security alerts, weak password detection, and security dashboard.</en>
+            <fr>Plugin d'audit de sécurité complet pour GLPI 11 : journaux d'audit temps réel, alertes de sécurité, détection mots de passe faibles, tableau de bord sécurité.</fr>
+        </long>
+    </description>
+    <homepage>https://github.com/pluginsGLPI/securityaudit</homepage>
+    <download>https://github.com/pluginsGLPI/securityaudit/releases</download>
+    <issues>https://github.com/pluginsGLPI/securityaudit/issues</issues>
+    <readme>https://github.com/pluginsGLPI/securityaudit/blob/main/README.md</readme>
+    <authors>
+        <author>Marco Romero</author>
+    </authors>
+    <versions>
+        <version>
+            <num>1.0.0</num>
+            <compatibility>~11.0.0</compatibility>
+        </version>
+    </versions>
+    <langs>
+        <lang>en_GB</lang>
+        <lang>fr_FR</lang>
+    </langs>
+    <license>MIT</license>
+</root>
