@@ -17,7 +17,6 @@
    <homepage>https://github.com/mapro84/glpi-securityaudit</homepage>
    <download>https://github.com/mapro84/glpi-securityaudit/archive/refs/heads/main.zip</download>
    <issues>https://github.com/mapro84/glpi-securityaudit/issues</issues>
-   <readme>https://raw.githubusercontent.com/mapro84/glpi-securityaudit/main/README.md</readme>
    <authors>
       <author>Mario Prospero</author>
    </authors>
